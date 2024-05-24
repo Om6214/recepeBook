@@ -31,15 +31,15 @@ const Api = () => {
                             <h5 className="card-title">{curEle.title}</h5>
                             <p>CookTime - {curEle.cookTime} mins</p>
                         </div>
-                        <ul className="list-group list-group-flush">
+                        <ul style={{borderRadius:"20px"}} className="list-group list-group-flush">
                             <li className="list-group-item">Carbohydrates - {curEle.carbohydrate}</li>
                             <li className="list-group-item">Fat - {curEle.fat}</li>
                             <li className="list-group-item">Calories - {curEle.calories}</li>
                             <li className="list-group-item">Fiber - {curEle.fiber}</li>
                         </ul>
                         <div className="card-body">
-                            <button onClick={() => handleRecipy(curEle.title, curEle.directions, curEle.ingredients,curEle.photoUrl)}>Recipe</button>
-                            <a href={curEle.source} className="card-link">Source</a>
+                            <button className='btn' onClick={() => handleRecipy(curEle.title, curEle.directions, curEle.ingredients,curEle.photoUrl)}>Recipe</button>
+                            <a className="btn" target='blank' href={curEle.source}>Source</a>
                         </div>
                     </div>
                 ))}

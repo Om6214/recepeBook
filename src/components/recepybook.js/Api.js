@@ -22,8 +22,10 @@ const Api = () => {
     }, []);
 
     return (
+        
         <div className="container text-center">
             <div className="row">
+                <h1 style={{marginTop:"30px"}}>Om Recepe Book</h1>
                 {res.map((curEle, index) => (
                     <div key={index} className="card my-3 mx-3" style={{ width: "18rem" }}>
                         <img src={curEle.photoUrl} style={{ height: "250px" }} className="card-img-top my-3" alt="..." />

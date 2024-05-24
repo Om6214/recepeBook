@@ -20,3 +20,6 @@ img{
 li{
     margin-top: 2px;
 }
+.row{
+    justify-content: center;
+}
